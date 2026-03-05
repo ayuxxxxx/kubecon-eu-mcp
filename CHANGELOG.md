@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/njoerd114/kubecon-eu-mcp/compare/kubecon-eu-mcp-v0.2.0...kubecon-eu-mcp-v0.2.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* chain PyPI publish in release-please workflow ([6e644e5](https://github.com/njoerd114/kubecon-eu-mcp/commit/6e644e579849c322f20315b9dd09481bbe61a81b))
+* chain PyPI publish in release-please workflow ([263a20b](https://github.com/njoerd114/kubecon-eu-mcp/commit/263a20b55b2315d9f1ebb4075ec73b10945ee5c2))
+
 ## [0.2.0](https://github.com/njoerd114/kubecon-eu-mcp/compare/kubecon-eu-mcp-v0.1.0...kubecon-eu-mcp-v0.2.0) (2026-03-05)
 
 
